@@ -52,6 +52,7 @@ flutter.buildFlutterApplication {
 
   postInstall = ''
     install -Dm644 assets/logo.png $out/share/pixmaps/chameleonultragui.png
+    install -Dm644 ${./70-chameleon-ultra.rules} $out/lib/udev/rules.d/70-chameleon-ultra.rules
   '';
 
   meta = with lib; {

@@ -1,0 +1,4 @@
+# Chameleon Ultra/Lite
+SUBSYSTEM=="usb", ATTR{idVendor}=="6868", ATTR{idProduct}=="8686", MODE="0660", TAG+="uaccess"
+# Chameleon Ultra/Lite in nRF DFU mode
+SUBSYSTEM=="usb", ATTR{idVendor}=="1915", ATTR{idProduct}=="521f", MODE="0660", TAG+="uaccess"
